@@ -4,13 +4,13 @@ import React, { Component } from 'react'
 class StoreList extends Component {
     render() {
         return (
-            <section className="store-list">
+            <section className="stores">
             {
-                this.props.StoreList.map(store =>
-                    <div key={store.id}>
-                        {store.name}
-                    </div>
-                )
+               this.props.stores.map(store =>
+                  <div key={store.id}>
+                      {store.name}
+                  </div>
+               )
             }
             </section>
         )
